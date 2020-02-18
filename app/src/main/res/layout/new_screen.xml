@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,28 +15,37 @@
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="133dp"
             android:layout_height="62dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="112dp"
             android:backgroundTint="#03A9F4"
             android:backgroundTintMode="src_atop"
             android:text="Next"
-            tools:layout_editor_absoluteX="213dp"
-            tools:layout_editor_absoluteY="557dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <Button
             android:id="@+id/button6"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="133dp"
             android:layout_height="62dp"
+            android:layout_marginStart="49dp"
+            android:layout_marginBottom="112dp"
             android:backgroundTint="#03A9F4"
             android:text="Previous"
-            tools:layout_editor_absoluteX="36dp"
-            tools:layout_editor_absoluteY="557dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <VideoView
             android:id="@+id/videoView"
-            android:layout_width="282dp"
-            android:layout_height="180dp"
-            tools:layout_editor_absoluteX="64dp"
-            tools:layout_editor_absoluteY="275dp" />
+            android:layout_width="288dp"
+            android:layout_height="237dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="244dp"
+            android:layout_marginEnd="65dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

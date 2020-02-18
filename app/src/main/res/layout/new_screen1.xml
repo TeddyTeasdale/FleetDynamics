@@ -14,27 +14,41 @@
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="133dp"
             android:layout_height="62dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="112dp"
             android:backgroundTint="#03A9F4"
             android:text="Next"
-            tools:layout_editor_absoluteX="229dp"
-            tools:layout_editor_absoluteY="566dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <Button
             android:id="@+id/button4"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="133dp"
             android:layout_height="62dp"
+            android:layout_marginStart="49dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="112dp"
             android:backgroundTint="#03A9F4"
             android:text="Previous"
-            tools:layout_editor_absoluteX="47dp"
-            tools:layout_editor_absoluteY="566dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="257dp"
             android:layout_height="251dp"
-            app:srcCompat="@android:drawable/ic_menu_camera"
-            tools:layout_editor_absoluteX="88dp"
-            tools:layout_editor_absoluteY="172dp" />
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="178dp"
+            android:layout_marginEnd="77dp"
+            android:layout_marginBottom="143dp"
+            app:layout_constraintBottom_toTopOf="@+id/button3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
