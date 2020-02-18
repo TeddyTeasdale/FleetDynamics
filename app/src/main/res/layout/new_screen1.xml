@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="133dp"
+            android:layout_height="62dp"
+            android:backgroundTint="#03A9F4"
+            android:text="Next"
+            tools:layout_editor_absoluteX="229dp"
+            tools:layout_editor_absoluteY="566dp" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="133dp"
+            android:layout_height="62dp"
+            android:backgroundTint="#03A9F4"
+            android:text="Previous"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="566dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="257dp"
+            android:layout_height="251dp"
+            app:srcCompat="@android:drawable/ic_menu_camera"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="172dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
