@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "931598732962",
+    "firebase_url": "https://fleet-dynamics.firebaseio.com",
+    "project_id": "fleet-dynamics",
+    "storage_bucket": "fleet-dynamics.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931598732962:android:d1212ee02ddf2330ea11fb",
+        "android_client_info": {
+          "package_name": "com.example.fleetdynamics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "931598732962-fcegt7ti974acmd3h9lhlj65mlocud57.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fleetdynamics",
+            "certificate_hash": "10f5d9f030bcecae9447339ad23d4696a04a4c6d"
+          }
+        },
+        {
+          "client_id": "931598732962-0alvipt2pr6heculolgt2shosm9rll1h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjVzZSxPKu62GX40RGMz1NvOfCzPJxldA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "931598732962-0alvipt2pr6heculolgt2shosm9rll1h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
