@@ -7,53 +7,19 @@
     android:minWidth="40dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="77dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="204dp"
-        android:layout_marginEnd="75dp"
-        android:text="Job Details"
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="254dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="553dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="133dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginBottom="84dp"
-        android:backgroundTint="#03A9F4"
-        android:text="Previous"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button2"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="133dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginBottom="84dp"
-        android:backgroundTint="#03A9F4"
-        android:text="Next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="289dp"
-        android:layout_height="256dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="32dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
