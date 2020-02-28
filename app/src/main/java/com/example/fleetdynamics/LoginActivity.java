@@ -34,7 +34,7 @@ public class LoginActivity extends AppCompatActivity
 
         myEmail = findViewById(R.id.Email);
         myPassword = findViewById(R.id.password);
-        progressBar = findViewById(R.id.progressBar);
+        progressBar = findViewById(R.id.progressBar2);
         fAuth = FirebaseAuth.getInstance();
         myLoginBtn = findViewById(R.id.loginBtn);
         myCreateBtn = findViewById(R.id.createText);
@@ -68,7 +68,7 @@ public class LoginActivity extends AppCompatActivity
 
                                             //authenticate the user
                                             //Registering the user in firebase
-                                            fAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                                            fAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                                                 @Override
                                                 public void onComplete(@NonNull Task<AuthResult> task)
                                                 {

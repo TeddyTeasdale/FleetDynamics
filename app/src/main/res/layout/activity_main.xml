@@ -9,51 +9,28 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="77dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="204dp"
-        android:layout_marginEnd="75dp"
-        android:text="Job Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Fleet Dynamics"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
 
     <Button
         android:id="@+id/button"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="133dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginBottom="84dp"
-        android:backgroundTint="#03A9F4"
-        android:text="Previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button2"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="133dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginBottom="84dp"
-        android:backgroundTint="#03A9F4"
-        android:text="Next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="289dp"
-        android:layout_height="256dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="32dp"
-        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.974"
+        android:onClick= "logout1"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
