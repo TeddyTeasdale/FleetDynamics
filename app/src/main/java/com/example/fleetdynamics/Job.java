@@ -2,41 +2,34 @@ package com.example.fleetdynamics;
 
 public class Job
 {
-    private String customerFName;
-    private String customerSName;
-    private int jobId;
+    private String customerName;
     private String JobLocation;
+    private String vehicle;
+    private String type;
 
-    public Job(String customerFName, String customerSName, int jobId, String jobLocation)
+    public Job(String customerName, String jobLocation, String vehicle, String type)
     {
-        this.customerFName = customerFName;
-        this.customerSName = customerSName;
-        this.jobId = jobId;
-        this.JobLocation = jobLocation;
+        this.customerName = customerName;
+        JobLocation = jobLocation;
+        this.vehicle = vehicle;
+        this.type = type;
+
     }
 
-    public String getCustomerFName() {
-        return customerFName;
+    public Job()
+    {
+        this.customerName = "";
+        JobLocation = "";
+        this.vehicle = "";
+        this.type = null;
     }
 
-    public void setCustomerFName(String customerFName) {
-        this.customerFName = customerFName;
+    public String getCustomerName() {
+        return customerName;
     }
 
-    public String getCustomerSName() {
-        return customerSName;
-    }
-
-    public void setCustomerSName(String customerSName) {
-        this.customerSName = customerSName;
-    }
-
-    public int getJobId() {
-        return jobId;
-    }
-
-    public void setJobId(int jobId) {
-        this.jobId = jobId;
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
     }
 
     public String getJobLocation() {
@@ -45,5 +38,21 @@ public class Job
 
     public void setJobLocation(String jobLocation) {
         JobLocation = jobLocation;
+    }
+
+    public String getVehicle() {
+        return vehicle;
+    }
+
+    public void setVehicle(String vehicle) {
+        this.vehicle = vehicle;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }
