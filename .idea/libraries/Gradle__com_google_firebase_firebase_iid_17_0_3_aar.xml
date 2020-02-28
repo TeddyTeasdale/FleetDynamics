@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-iid:17.0.3@aar">
+    <CLASSES>
+      <root url="jar:///home/scm-studs/s6345788/.gradle/caches/transforms-2/files-2.1/22c78920e31b3143d8c0fac012202b49/jetified-firebase-iid-17.0.3/jars/classes.jar!/" />
+      <root url="file:///home/scm-studs/s6345788/.gradle/caches/transforms-2/files-2.1/22c78920e31b3143d8c0fac012202b49/jetified-firebase-iid-17.0.3/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar:///home/scm-studs/s6345788/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-iid/17.0.3/f75ec044e44b868f2a037e753b0287889e224837/firebase-iid-17.0.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
