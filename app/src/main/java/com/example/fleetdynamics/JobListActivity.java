@@ -1,6 +1,7 @@
 package com.example.fleetdynamics;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -76,7 +77,10 @@ public class JobListActivity extends AppCompatActivity
                         jobs.add(job);
                         i++;
                     }
-
+                    for(Job e : jobs)
+                    {
+                        System.out.println(e.toString());
+                    }
                     RecyclerviewAdapter adapter = new RecyclerviewAdapter(jobs);
                     recyclerview.setAdapter(adapter);
                 }

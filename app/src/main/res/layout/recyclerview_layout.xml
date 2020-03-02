@@ -3,66 +3,50 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <androidx.cardview.widget.CardView
         android:id="@+id/cv"
-        >
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
-            >
+            android:padding="16dp">
 
-        <TextView
-            android:id="@+id/CustomerNameTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="1dp"
-            android:text="TextView"
-            app:layout_constraintBottom_toTopOf="@+id/JobListView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/TitleTextView" />
+            <TextView
+                android:id="@+id/CustomerNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="1dp"
+                android:textSize="30sp" />
 
-        <TextView
-            android:id="@+id/AddressTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="1dp"
-            android:text="TextView"
-            app:layout_constraintBottom_toTopOf="@+id/JobListView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/CustomerNameTextView" />
+            <TextView
+                android:id="@+id/AddressTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CustomerNameTextView"
+                android:layout_marginBottom="1dp" />
 
-        <TextView
-            android:id="@+id/VehicleTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="1dp"
-            android:text="TextView"
-            app:layout_constraintBottom_toTopOf="@+id/JobListView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/CustomerNameTextView" />
+            <TextView
+                android:id="@+id/VehicleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_below="@+id/AddressTextView" />
 
-        <TextView
-            android:id="@+id/JobTypeTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="1dp"
-            android:text="TextView"
-            app:layout_constraintBottom_toTopOf="@+id/JobListView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/CustomerNameTextView" />
+            <TextView
+                android:id="@+id/JobTypeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/VehicleTextView"
+                android:layout_marginBottom="1dp" />
 
         </RelativeLayout>
 
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>
