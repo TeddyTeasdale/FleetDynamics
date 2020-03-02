@@ -35,7 +35,7 @@ public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapte
                                                                int viewType) {
         // create a new view
         TextView v = (TextView) LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.activity_job_list, parent, false);
+                .inflate(R.layout.recyclerview_layout, parent, false);
 
         MyViewHolder vh = new MyViewHolder(v);
         return vh;
