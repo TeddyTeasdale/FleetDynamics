@@ -24,7 +24,7 @@ public class collectionActivity extends AppCompatActivity
 
         imageView = (ImageView) this.findViewById(R.id.imageView1);
         Button photoButton = (Button) this.findViewById(R.id.button1);
-        photoButton.setOnClickListener(new View.onClickListener()
+        photoButton.setOnClickListener(new View.OnClickListener()
         {
 
 
