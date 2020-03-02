@@ -20,10 +20,10 @@ public class collectionActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_collection2);
+        setContentView(R.layout.activity_collection);
 
-        imageView = (ImageView) this.findViewById(R.id.imageView1);
-        Button photoButton = (Button) this.findViewById(R.id.button1);
+        imageView = (ImageView) this.findViewById(R.id.imageView3);
+        Button photoButton = (Button) this.findViewById(R.id.button14);
         photoButton.setOnClickListener(new View.OnClickListener()
         {
 
