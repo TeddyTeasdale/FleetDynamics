@@ -12,6 +12,7 @@ import java.util.ArrayList;
 public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapter.MyViewHolder>
 {
     private ArrayList<Job> jobList;
+
     public static class MyViewHolder extends RecyclerView.ViewHolder{
         // each data item is just a string in this case
         public TextView customerTextView, addressTextView, vehicleTextView, jobTypeTextView;
@@ -34,7 +35,7 @@ public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapte
     public RecyclerviewAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent,
                                                                int viewType) {
         // create a new view
-        TextView v = (TextView) LayoutInflater.from(parent.getContext())
+        View v = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.recyclerview_layout, parent, false);
 
         MyViewHolder vh = new MyViewHolder(v);
@@ -54,6 +55,7 @@ public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapte
         String vehicle = job.getVehicle();
         String address = job.getJobLocation();
         String jobType = job.getType();
+
 
         holder.customerTextView.setText(customer);
         holder.addressTextView.setText(address);
