@@ -16,45 +16,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
-        // Jeni work
-
-
-
-
-
-
-        // Micheal work
+    //    Button logOutbutton = (Button) findViewById(R.id.LogOutButton);
+    //    logOutbutton.setOnClickListener(new View.OnClickListener() {
+    //        public void onClick(View v) {
+    //            startActivity(new Intent(MainActivity.this, LoginActivity.class));
+     //       }
+     //   });
 
 
-
-
-
-
-
-        // Hafsa work
+        Button jobSchedulebutton = (Button) findViewById(R.id.JobScheduleButton);
+        jobSchedulebutton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, JobListActivity.class));
+            }
+        });
 
 
 
-
-
-
-
-        // James work
-
-
-
-
-
-
-
-
-        //Teddy work
-         Button button= (Button) findViewById(R.id.LogInButton);
-               button.setOnClickListener(new View.OnClickListener() {
-                   public void onClick(View v) {
-                     startActivity(new Intent(MainActivity.this, NavigationActivity.class));
-                    }
-                });
     }
 }
