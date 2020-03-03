@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">FleetDynamics</string>
+    <string name="button_damage">Open</string>
+    <string name="button1">Button</string>
+    <string name="button">Button</string>
+    <string name="todo">TODO</string>
+    <string name="clear">clear</string>
+    <string name="save">save</string>
+    <string name="cancel">cancel</string>
 </resources>
