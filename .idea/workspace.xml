@@ -5,23 +5,16 @@
       <config />
     </shared>
   </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="43d1b09b-4624-4402-b847-c249702186fb" name="Default Changelist" comment="">
-      <change afterPath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" afterDir="false" />
       <change beforePath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/.idea/workspace.xml" beforeDir="false" afterPath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/.idea/workspace.xml" afterDir="false" />
       <change beforePath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/app.iml" beforeDir="false" afterPath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/app.iml" afterDir="false" />
-      <change beforePath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/build.gradle" beforeDir="false" afterPath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/build.gradle" afterDir="false" />
-      <change beforePath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/RecyclerviewAdapter.java" beforeDir="false" afterPath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/RecyclerviewAdapter.java" afterDir="false" />
-      <change beforePath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/res/layout/activity_job_list.xml" beforeDir="false" afterPath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/res/layout/activity_job_list.xml" afterDir="false" />
+      <change beforePath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/MainActivity.java" beforeDir="false" afterPath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/MainActivity.java" afterDir="false" />
+      <change beforePath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/NavigationActivity.java" beforeDir="false" />
+      <change beforePath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/res/layout/activity_navigation.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,95 +36,73 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/MainActivity.java">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-154">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="390">
+              <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/fleetdynamics/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
+              <folding>
+                <element signature="e#673#855#0" expanded="true" />
+                <element signature="e#854#855#0" expanded="true" />
+                <element signature="e#987#1172#0" expanded="true" />
+                <element signature="e#1171#1172#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/res/layout/activity_main.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/RecyclerviewAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-214">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1501#1502#0" expanded="true" />
-                <element signature="e#1538#1539#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/res/layout/activity_navigation.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/res/layout/recyclerview_layout.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+            <state relative-caret-position="475">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="51" selection-end-column="15" />
             </state>
           </provider>
           <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/build.gradle">
+        <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/NavigationActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/res/layout/activity_job_list.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="text-editor" />
-          <provider selected="true" editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/JobListActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="81" column="55" selection-start-line="81" selection-start-column="55" selection-end-line="81" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/Job.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="61" column="43" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
+            <state relative-caret-position="315">
+              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -162,12 +133,9 @@
         <option value="/home/scm-studs/v8015858/FleetDynamics/app/src/main/res/layout/new_screen4.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/fleetdynamics/MainActivity.java" />
-        <option value="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/build.gradle" />
-        <option value="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/RecyclerviewAdapter.java" />
-        <option value="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/res/layout/activity_job_list.xml" />
-        <option value="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/JobListActivity.java" />
-        <option value="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/Job.java" />
-        <option value="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/res/layout/recyclerview_layout.xml" />
+        <option value="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/MainActivity.java" />
+        <option value="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/res/layout/activity_main.xml" />
+        <option value="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -181,9 +149,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -205,12 +173,7 @@
             <path>
               <item name="FleetDynamics" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java (generated)" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="FleetDynamics" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java (generated)" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="fleetdynamics" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
             <path>
@@ -346,29 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581958082483</updated>
     </task>
-    <task id="LOCAL-00003" summary="fikse code">
-      <created>1583160591171</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1583160591171</updated>
-    </task>
-    <task id="LOCAL-00004" summary="added layout manager for recycler view">
-      <created>1583160622767</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1583160622767</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="24" width="1932" height="1157" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.23908414" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.23908414" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -376,24 +324,25 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" weight="0.32955405" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.8413206" weight="0.32976654" />
+      <window_info anchor="bottom" id="Find" visible="true" weight="0.32976654" />
+      <window_info anchor="bottom" id="Run" order="0" visible="true" weight="0.32976654" />
       <window_info anchor="bottom" id="Logcat" order="1" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" />
       <window_info anchor="bottom" id="Terminal" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.15867944" side_tool="true" visible="true" weight="0.32976654" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.32980132" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49733758" weight="0.3103113" />
-      <window_info anchor="bottom" id="Android Profiler" order="8" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.18190661" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32992566" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info active="true" anchor="right" id="Preview" order="4" visible="true" weight="0.32960597" />
+      <window_info anchor="right" id="Preview" order="4" visible="true" weight="0.32960597" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" x="3369" y="141" width="400" height="679" id="Attributes" order="6" type="FLOATING" />
-      <window_info anchor="right" id="Assistant" order="7" weight="0.44994676" />
+      <window_info anchor="right" id="Assistant" order="7" weight="0.18636848" />
     </layout>
     <layout-to-restore>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
@@ -426,8 +375,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fikse code" />
-    <MESSAGE value="added layout manager for recycler view" />
-    <option name="LAST_COMMIT_MESSAGE" value="added layout manager for recycler view" />
+    <option name="LAST_COMMIT_MESSAGE" value="fikse code" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///home/scm-studs/v8015858/FleetDynamics/app/src/main/res/layout/Screen.kt" />
@@ -445,91 +393,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/fleetdynamics/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-99">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="135">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
-    </entry>
-    <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/res/layout/activity_navigation.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state>
+          <caret selection-end-line="92" selection-end-column="52" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/NavigationActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="360">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="345">
+          <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
+          <folding>
+            <element signature="e#673#855#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#987#1172#0" expanded="true" />
+            <element signature="e#1171#1172#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/res/layout/activity_job_list.xml">
+    <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        <state relative-caret-position="225">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/RecyclerviewAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-214">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1501#1502#0" expanded="true" />
-            <element signature="e#1538#1539#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/JobListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="81" column="55" selection-start-line="81" selection-start-column="55" selection-end-line="81" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/Job.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="61" column="43" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
+        <state relative-caret-position="240">
+          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/res/layout/recyclerview_layout.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        <state relative-caret-position="475">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="51" selection-end-column="15" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
