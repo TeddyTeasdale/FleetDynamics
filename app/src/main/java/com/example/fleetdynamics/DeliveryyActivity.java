@@ -1,16 +1,12 @@
 package com.example.fleetdynamics;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.app.Dialog;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.media.MediaScannerConnection;
 import android.os.Bundle;
 import android.os.Environment;
-import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -22,7 +18,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Calendar;
 
-public class DeliveryActivity extends AppCompatActivity {
+public class DeliveryyActivity extends AppCompatActivity {
 
     Button cancel,clear, save;
     Bitmap bit;
@@ -34,7 +30,7 @@ public class DeliveryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_delivery);
+        setContentView(R.layout.activity_deliveryy);
 
         SignatureView = (SignatureView) findViewById(R.id.delsignature);
         clear = (Button) findViewById(R.id.delclear);
@@ -49,6 +45,8 @@ public class DeliveryActivity extends AppCompatActivity {
             }
         });
 
+        // the app is being stopped when clicking cancel button
+        //cancel button will cancel the signature action
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,7 +58,7 @@ public class DeliveryActivity extends AppCompatActivity {
         });
 
 
-
+       //this button will save the signature as image
         save.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -89,7 +87,7 @@ public class DeliveryActivity extends AppCompatActivity {
                     pc.createNewFile();
                     FileOutputStream pi = new FileOutputStream(pc);
                     pi.write(delivery.toByteArray());
-                    MediaScannerConnection.scanFile(DeliveryActivity.this,
+                    MediaScannerConnection.scanFile(DeliveryyActivity.this,
                                 new String[] {pc.getPath()},
                                 new String[] {"image/jpeg"}, null);
                     pi.close();
