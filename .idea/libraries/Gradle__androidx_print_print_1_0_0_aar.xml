@@ -2,6 +2,9 @@
   <library name="Gradle: androidx.print:print:1.0.0@aar">
     <ANNOTATIONS>
 <<<<<<< HEAD
+      <root url="jar:///home/scm-studs/m2023967/.gradle/caches/transforms-2/files-2.1/f15566ac99d93f31d0227f09e1f27c57/print-1.0.0/annotations.zip!/" />
+=======
+<<<<<<< HEAD
       <root url="jar:///home/scm-studs/v8254888/.gradle/caches/transforms-2/files-2.1/f15566ac99d93f31d0227f09e1f27c57/print-1.0.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
@@ -13,15 +16,20 @@
       <root url="jar:///home/scm-studs/v8254888/.gradle/caches/modules-2/files-2.1/androidx.print/print/1.0.0/71fc2d9acf7cce6b96230c5af263268b1664914a/print-1.0.0-sources.jar!/" />
 =======
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f15566ac99d93f31d0227f09e1f27c57/print-1.0.0/annotations.zip!/" />
+>>>>>>> Dev
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f15566ac99d93f31d0227f09e1f27c57/print-1.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f15566ac99d93f31d0227f09e1f27c57/print-1.0.0/res" />
+      <root url="jar:///home/scm-studs/m2023967/.gradle/caches/transforms-2/files-2.1/f15566ac99d93f31d0227f09e1f27c57/print-1.0.0/jars/classes.jar!/" />
+      <root url="file:///home/scm-studs/m2023967/.gradle/caches/transforms-2/files-2.1/f15566ac99d93f31d0227f09e1f27c57/print-1.0.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
+<<<<<<< HEAD
+      <root url="jar:///home/scm-studs/m2023967/.gradle/caches/modules-2/files-2.1/androidx.print/print/1.0.0/71fc2d9acf7cce6b96230c5af263268b1664914a/print-1.0.0-sources.jar!/" />
+=======
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.print/print/1.0.0/71fc2d9acf7cce6b96230c5af263268b1664914a/print-1.0.0-sources.jar!/" />
 >>>>>>> origin/James-Carney
+>>>>>>> Dev
     </SOURCES>
   </library>
 </component>

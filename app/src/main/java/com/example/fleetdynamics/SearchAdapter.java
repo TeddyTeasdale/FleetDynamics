@@ -6,10 +6,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import java.util.ArrayList;
 
 
@@ -25,10 +25,11 @@ public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.SearchView
     {
         TextView reg;
         TextView makeModel;
+
         public SearchViewHolder(@NonNull View itemView) {
             super(itemView);
-            reg = (TextView) itemView.findViewById(R.id.auto);
-            makeModel = (TextView) itemView.findViewById(R.id.auto);
+            reg = itemView.findViewById(R.id.reg);
+            makeModel = itemView.findViewById(R.id.makeModel);
         }
     }
 
@@ -41,11 +42,15 @@ public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.SearchView
 
     @Override
     public SearchAdapter.SearchViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        View view = LayoutInflater.from(context).inflate(R.layout.search_result_damage, parent, false);
+        return new SearchAdapter.SearchViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull SearchViewHolder holder, int position) {
+        holder.reg.setText(regList.get(position));
+        holder.makeModel.setText(makeModelList.get(position));
+
 
     }
 

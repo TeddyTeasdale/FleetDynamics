@@ -29,14 +29,15 @@ public class DamageSearch extends AppCompatActivity {
     FirebaseUser firebaseUser;
     ArrayList<String> regList;
     ArrayList<String> makeModelList;
+    SearchAdapter searchAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_damage);
 
-        search_edit_text = (EditText) findViewById(R.id.search_edit_text);
-        recyclerView = (RecyclerView) findViewById(R.id.RecyclerView);
+        search_edit_text = findViewById(R.id.search_edit_text);
+        recyclerView = findViewById(R.id.RecyclerView);
 
 
         databaseReference = FirebaseDatabase.getInstance().getReference();
@@ -73,6 +74,10 @@ public class DamageSearch extends AppCompatActivity {
 
     private void setAdapter(final String searchedString)
     {
+        regList.clear();
+        makeModelList.clear();
+        recyclerView.removeAllViews();
+
         databaseReference.child("users").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
@@ -80,7 +85,7 @@ public class DamageSearch extends AppCompatActivity {
                 int counter = 0;
 
                 for (DataSnapshot snapshot: dataSnapshot.getChildren()){
-                    String vehid = snapshot.getKey();
+                    String uid = snapshot.getKey();
                     String reg = snapshot.child("reg").getValue(String.class);
                     String makeModel = snapshot.child("makeModel").getValue(String.class);
 
@@ -101,6 +106,9 @@ public class DamageSearch extends AppCompatActivity {
                     if (counter == 15)
                         break;
                 }
+
+                searchAdapter = new SearchAdapter(DamageSearch.this, regList, makeModelList);
+                recyclerView.setAdapter(searchAdapter);
             }
 
             @Override
