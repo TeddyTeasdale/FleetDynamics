@@ -1,6 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.core:core:1.0.1@aar">
     <ANNOTATIONS>
+<<<<<<< HEAD
+      <root url="jar:///home/scm-studs/t7091808/.gradle/caches/transforms-2/files-2.1/16eb53875ba78320b1fcf5cac2c4c8c7/core-1.0.1/annotations.zip!/" />
+=======
+<<<<<<< HEAD
       <root url="jar:///home/scm-studs/v8254888/.gradle/caches/transforms-2/files-2.1/16eb53875ba78320b1fcf5cac2c4c8c7/core-1.0.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
@@ -10,6 +14,22 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar:///home/scm-studs/v8254888/.gradle/caches/modules-2/files-2.1/androidx.core/core/1.0.1/ae10d2e1965b944830c2c2aaf154765ceb32e0bc/core-1.0.1-sources.jar!/" />
+=======
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/16eb53875ba78320b1fcf5cac2c4c8c7/core-1.0.1/annotations.zip!/" />
+>>>>>>> Dev
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar:///home/scm-studs/t7091808/.gradle/caches/transforms-2/files-2.1/16eb53875ba78320b1fcf5cac2c4c8c7/core-1.0.1/jars/classes.jar!/" />
+      <root url="file:///home/scm-studs/t7091808/.gradle/caches/transforms-2/files-2.1/16eb53875ba78320b1fcf5cac2c4c8c7/core-1.0.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+<<<<<<< HEAD
+      <root url="jar:///home/scm-studs/t7091808/.gradle/caches/modules-2/files-2.1/androidx.core/core/1.0.1/ae10d2e1965b944830c2c2aaf154765ceb32e0bc/core-1.0.1-sources.jar!/" />
+=======
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.core/core/1.0.1/ae10d2e1965b944830c2c2aaf154765ceb32e0bc/core-1.0.1-sources.jar!/" />
+>>>>>>> origin/James-Carney
+>>>>>>> Dev
     </SOURCES>
   </library>
 </component>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sign="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.kyanogen.signatureview.SignatureView
+        android:id="@+id/delsignature"
+        android:layout_width="411dp"
+        android:layout_height="500dp"
+
+        sign:backgroundColor="#E7FAFC"
+        sign:enableSignature="true"
+        sign:penColor="#F1000000"
+        sign:penSize="6dp" />
+
+    <Button
+        android:id="@+id/delclear"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:backgroundTintMode="multiply"
+        android:text="@string/clear"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/delieverysave"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:backgroundTintMode="multiply"
+        android:text="@string/save" />
+
+    <Button
+        android:id="@+id/deliverycancel"
+        android:layout_width="412dp"
+        android:layout_height="50dp"
+        android:text="@string/cancel" />
+
+</LinearLayout>
