@@ -29,12 +29,12 @@
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:backgroundTintMode="multiply"
-        android:text="save" />
+        android:text="@string/save" />
 
     <Button
         android:id="@+id/deliverycancel"
         android:layout_width="412dp"
         android:layout_height="50dp"
-        android:text="cancel" />
+        android:text="@string/cancel" />
 
 </LinearLayout>
