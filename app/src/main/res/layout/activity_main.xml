@@ -4,22 +4,91 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:minWidth="40dp"
     tools:context=".MainActivity">
 
+
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/JobScheduleButton"
+        android:layout_width="312dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="8dp"
+        android:text="Job Schedule"
+        app:layout_constraintBottom_toTopOf="@+id/DamageMapButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/DamageMapButton"
+        android:layout_width="312dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="8dp"
+        android:text="Damage map"
+        app:layout_constraintBottom_toTopOf="@+id/CollectionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/JobScheduleButton" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="312dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="17dp"
+        android:text="Navigation"
+        app:layout_constraintBottom_toTopOf="@+id/LogOutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DeliveryButton" />
+
+    <Button
+        android:id="@+id/DeliveryButton"
+        android:layout_width="312dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="18dp"
+        android:text="Delivery"
+        app:layout_constraintBottom_toTopOf="@+id/button17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CollectionButton" />
+    <Button
+        android:id="@+id/CollectionButton"
+        android:layout_width="312dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="14dp"
+        android:text="Collection "
+        app:layout_constraintBottom_toTopOf="@+id/DeliveryButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DamageMapButton" />
+
+    <Button
+        android:id="@+id/LogOutButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="254dp"
-        android:layout_marginTop="130dp"
-        android:layout_marginEnd="69dp"
-        android:layout_marginBottom="553dp"
-        android:text="Button"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="19dp"
+        android:text="Log out"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/button17" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
