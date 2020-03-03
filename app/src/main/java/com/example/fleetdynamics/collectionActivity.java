@@ -2,7 +2,6 @@ package com.example.fleetdynamics;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Notification;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -23,7 +22,7 @@ public class collectionActivity extends AppCompatActivity
         setContentView(R.layout.activity_collection);
 
         imageView = (ImageView) this.findViewById(R.id.imageView3);
-        Button photoButton = (Button) this.findViewById(R.id.button14);
+        Button photoButton = (Button) this.findViewById(R.id.DamageMapButton);
         photoButton.setOnClickListener(new View.OnClickListener()
         {
 
