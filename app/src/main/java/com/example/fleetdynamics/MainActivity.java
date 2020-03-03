@@ -8,42 +8,28 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        // Jeni work
-
-
-        // Micheal work
-
-
-        // Hafsa work
-
-
-        // James work
-
-        Button button_damage = (Button) findViewById(R.id.button_damage);
-        button_damage.setOnClickListener(new View.OnClickListener() {
-        public void onClick(View v){
-            startActivity(new Intent( MainActivity.this, DamageSearch.class));
-        }
+        Button logOutbutton = (Button) findViewById(R.id.LogOutButton);
+        logOutbutton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, LoginActivity.class));
+            }
         });
 
+
+        Button jobSchedulebutton = (Button) findViewById(R.id.JobScheduleButton);
+        jobSchedulebutton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, JobListActivity.class));
+            }
+        });
     }
-
-
-
-
-
-
-
-
-        //Teddy work
-
 
 }
