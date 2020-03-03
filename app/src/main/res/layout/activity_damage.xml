@@ -11,7 +11,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:hint="Search Text...." />
+        android:autofillHints=""
+        android:hint="Search Text...."
+        android:inputType="@android:string/autofill"
+        android:selectAllOnFocus="true"
+        android:singleLine="true" />
 
     <android.support.widget.RecyclerView
         android:id="@+id/RecyclerView"
