@@ -1,52 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sign="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".DeliveryActivity">
+    android:layout_height="match_parent">
+
+    <com.kyanogen.signatureview.SignatureView
+        android:id="@+id/delsignature"
+        android:layout_width="411dp"
+        android:layout_height="500dp"
+
+        sign:backgroundColor="#E7FAFC"
+        sign:enableSignature="true"
+        sign:penColor="#F1000000"
+        sign:penSize="6dp" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="119dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="547dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="125dp"
-        android:text="@string/button"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/delclear"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:backgroundTintMode="multiply"
+        android:text="Clear"
+        android:visibility="visible" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="119dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="547dp"
-        android:layout_marginEnd="74dp"
-        android:layout_marginBottom="125dp"
-        android:text="@string/button"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/delieverysave"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:backgroundTintMode="multiply"
+        android:text="save" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="241dp"
-        android:layout_height="220dp"
-        android:layout_marginStart="85dp"
-        android:layout_marginEnd="85dp"
-        android:layout_marginBottom="72dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_camera"
-        android:contentDescription="@string/todo" />
+    <Button
+        android:id="@+id/deliverycancel"
+        android:layout_width="412dp"
+        android:layout_height="50dp"
+        android:text="cancel" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
