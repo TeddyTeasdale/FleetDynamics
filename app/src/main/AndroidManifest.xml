@@ -16,6 +16,7 @@
         <activity android:name=".collectionActivity" />
         <activity android:name=".SearchAdapter" />
         <activity android:name=".DamageSearch" />
+        <activity android:name=".DeliveryyActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
