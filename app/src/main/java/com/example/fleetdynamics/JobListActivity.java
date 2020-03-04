@@ -18,6 +18,8 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
+// Author Teddy Teasdale
+
 public class JobListActivity extends AppCompatActivity
 {
 
