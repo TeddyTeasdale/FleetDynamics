@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity
         Button Delivery = (Button) findViewById(R.id.DeliveryButton);
         jobSchedulebutton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, DeliveryActivity.class));
+                startActivity(new Intent(MainActivity.this, DeliveryyActivity.class));
             }
         });
     }

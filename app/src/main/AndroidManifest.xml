@@ -16,13 +16,15 @@
         <activity android:name=".collectionActivity" />
         <activity android:name=".SearchAdapter" />
         <activity android:name=".DamageSearch" />
-        <activity android:name=".DeliveryyActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".DeliveryyActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+
         </activity>
 
         <activity android:name=".LoginActivity" />
