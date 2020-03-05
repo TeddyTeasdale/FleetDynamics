@@ -1,5 +1,6 @@
 package com.example.fleetdynamics;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -8,6 +9,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -18,7 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 // Author Teddy Teasdale
 
-public class MainActivity extends AppCompatActivity
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
 {
     private DrawerLayout drawer;
     private TextView NavEmail;
@@ -54,14 +56,40 @@ public class MainActivity extends AppCompatActivity
 
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-
+        navigationView.setNavigationItemSelectedListener(this);
 
         View headerView = navigationView.getHeaderView(0);
         NavEmail = headerView.findViewById(R.id.nav_email);
 
         NavEmail.setText(email);
 
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new JobListFragment()).commit();
+        navigationView.setCheckedItem(R.id.nav_joblist);
 
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem)
+    {
+        switch (menuItem.getItemId())
+        {
+            case R.id.nav_joblist:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new JobListFragment()).commit();
+                break;
+                // TO BE IMPLEMENTED WITH OTHER SCREENS UPON MERGE
+         //   case R.id.nav_joblist:
+         //       getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new JobListFragment());
+         //       break;
+         //   case R.id.nav_joblist:
+         //       getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new JobListFragment());
+         //       break;
+         //   case R.id.nav_joblist:
+         //       getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new JobListFragment());
+         //       break;
+
+        }
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
     }
 
     @Override
