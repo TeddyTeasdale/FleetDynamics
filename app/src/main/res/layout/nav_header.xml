@@ -7,6 +7,7 @@
     android:background="@color/colorAccent"
     android:padding="16dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
+
     >
 
 
@@ -22,10 +23,12 @@
         android:paddingTop="8dp"
         android:text="Joe Bloggs"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
     <TextView
-        android:layout_height="wrap_content"
+        android:id="@+id/nav_email"
         android:layout_width="wrap_content"
-        android:text="JoeBloggs@example.com"
-        />
+        android:layout_height="wrap_content"
+
+        android:text="JoeBloggs@example.com" />
 
 </LinearLayout>

@@ -10,12 +10,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 // Author Teddy Teasdale
 
 public class MainActivity extends AppCompatActivity
 {
     private DrawerLayout drawer;
+    private TextView NavEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +34,12 @@ public class MainActivity extends AppCompatActivity
                 //startActivity(new Intent(MainActivity.this, LoginActivity.class));
             //}
         //});
+
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        String email = user.getEmail();
+
+
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -38,6 +50,16 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
+
+
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+
+
+        View headerView = navigationView.getHeaderView(0);
+        NavEmail = headerView.findViewById(R.id.nav_email);
+
+        NavEmail.setText(email);
 
 
     }
