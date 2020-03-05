@@ -62,11 +62,7 @@ public class JobListActivity extends AppCompatActivity
                             job.setCustomerName(dataSnapshot.child(String.valueOf(i)).child("Customer").getValue(String.class));
                             job.setType(dataSnapshot.child(String.valueOf(i)).child("JobType").getValue(String.class));
                             job.setVehicle(dataSnapshot.child(String.valueOf(i)).child("Vehicle").getValue(String.class));
-
-                            System.out.println(job.getCustomerName());
-                            System.out.println(job.getJobLocation());
-                            System.out.println(job.getType());
-                            System.out.println(job.getVehicle());
+                            job.setJobId(i);
 
                         }
                         else
@@ -79,12 +75,10 @@ public class JobListActivity extends AppCompatActivity
                         jobs.add(job);
                         i++;
                     }
-                    for(Job e : jobs)
-                    {
-                        System.out.println(e.toString());
-                    }
                     RecyclerviewAdapter adapter = new RecyclerviewAdapter(jobs);
                     recyclerview.setAdapter(adapter);
+                    recyclerview.
+
                 }
 
                 @Override
