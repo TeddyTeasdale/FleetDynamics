@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="176dp"
     android:gravity="bottom"
-    android:background="@color/colorAccent"
+    android:background="#344955"
     android:padding="16dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
 
@@ -22,13 +22,14 @@
         android:layout_width="wrap_content"
         android:paddingTop="8dp"
         android:text="Joe Bloggs"
+        android:textColor="#FFFFFF"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
     <TextView
         android:id="@+id/nav_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:textColor="#FFFFFF"
         android:text="JoeBloggs@example.com" />
 
 </LinearLayout>
