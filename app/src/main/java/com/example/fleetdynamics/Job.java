@@ -2,7 +2,9 @@ package com.example.fleetdynamics;
 
 // Author Teddy Teasdale
 
-public class Job
+import java.io.Serializable;
+
+public class Job implements Serializable
 {
     private int jobId;
     private String customerName;

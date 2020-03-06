@@ -15,6 +15,7 @@ public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapte
 {
     private ArrayList<Job> jobList;
 
+
     public static class MyViewHolder extends RecyclerView.ViewHolder{
         // each data item is just a string in this case
         public TextView customerTextView, addressTextView, vehicleTextView, jobTypeTextView;

@@ -38,12 +38,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:textColor="#FFFFFF"
+        android:textColor="#ECECEC"
         android:buttonTint="@color/Black"
         android:background="@color/Dark_Blue_Gray"
+
         android:id="@+id/nav_view"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/drawer_menu"
+        app:itemTextColor="#ECECEC"
+        app:itemIconTint="#ECECEC"
+
+
+
         />
 
 </androidx.drawerlayout.widget.DrawerLayout>

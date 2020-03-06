@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -40,6 +41,28 @@ public class JobListFragment extends Fragment
         recyclerview = view.findViewById(R.id.JobListView);
         recyclerview.setHasFixedSize(true);
         recyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerview.addItemDecoration(new DividerItemDecoration(getContext(),
+                DividerItemDecoration.VERTICAL));
+        ItemClickSupport.addTo(recyclerview)
+                .setOnItemClickListener(new ItemClickSupport.OnItemClickListener() {
+                    @Override
+                    public void onItemClicked(RecyclerView recyclerView, int position, View v)
+                    {
+                        Job job = jobs.get(position);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("Vehicle", job.getVehicle());
+                        bundle.putString("Customer", job.getCustomerName());
+                        bundle.putString("Address", job.getJobLocation());
+                        bundle.putString("JobType", job.getType());
+
+                        JobInfoFragment frag = new JobInfoFragment();
+                        frag.setArguments(bundle);
+                        System.out.println(position);
+
+                        getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, frag).commit();
+
+                    }
+                });
 
         InitJobList();
 
@@ -61,7 +84,7 @@ public class JobListFragment extends Fragment
             public void onDataChange(DataSnapshot dataSnapshot) {
 
                 boolean empty = false;
-                int i = 1;
+                int i = 0;
                 while(!empty)
                 {
                     Job job = new Job ();

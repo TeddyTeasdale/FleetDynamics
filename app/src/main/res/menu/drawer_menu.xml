@@ -3,24 +3,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-        <group android:checkableBehavior="single">
+        <group android:checkableBehavior="single"
+                >
 
-            <item android:id="@+id/nav_joblist"
-                  android:icon="@drawable/ic_format_list_bulleted_black_24dp"
-                    android:textColor="#FFFFFF"
-                    android:title="Job List"/>
+            <item
+                android:id="@+id/nav_joblist"
+                android:icon="@drawable/ic_job_list"
+
+                android:title="Job List" />
             <item android:id="@+id/nav_delivery"
-                android:icon="@drawable/ic_arrow_forward_white_24dp"
-                android:title="Delivery"
-                android:textColor="#FFFFFF"/>
+                android:icon="@drawable/ic_delivery"
+                android:title="Delivery" />
 
             <item android:id="@+id/nav_collection"
-                android:icon="@drawable/ic_arrow_back_white_24dp"
+                android:icon="@drawable/ic_collection"
                 android:title="Collection"
-                android:textColor="#FFFFFF"/>
-            <item android:id="@+id/nav_logout"
-                android:icon="@drawable/ic_exit_to_app_white_24dp"
-                android:title="Log out"
-                android:textColor="#FFFFFF"/>
+                />
         </group>
+        <item
+            android:title="">
+            <menu>
+                <item android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_logout"
+                    android:title="Log out"
+                    />
+            </menu>
+        </item>
 </menu>
