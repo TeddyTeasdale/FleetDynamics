@@ -34,7 +34,8 @@ public class JobInfoFragment extends Fragment
         final View view = inflater.inflate(R.layout.fragment_jobinfo, container, false);
         Job job = new Job();
         job.setCustomerName(getArguments().getString("Customer"));
-        job.setVehicle(getArguments().getString("Vehicle"));
+        job.getVehicle().setModel(getArguments().getString("vehicleMake"));
+        job.getVehicle().setReg(getArguments().getString("vehicleReg"));
         job.setJobLocation(getArguments().getString("Address"));
         job.setType(getArguments().getString("JobType"));
 
@@ -45,7 +46,7 @@ public class JobInfoFragment extends Fragment
 
 
 
-        vehicle.setText(job.getVehicle());
+        vehicle.setText(job.getVehicle().getModel());
         customer.setText(job.getCustomerName());
         address.setText(job.getJobLocation());
         type.setText(job.getType());
@@ -63,36 +64,25 @@ public class JobInfoFragment extends Fragment
         vehicleimages.add(imageView3);
         vehicleimages.add(imageView4);
 
-        for(int i = 0; i<4 ; i++) {
-            StorageReference ref = storage.getReference("/VehicleImages/1/");
+
+            StorageReference ref = storage.getReference("/VehicleImages/"+ job.getVehicle().getReg());
             System.out.println(ref.toString());
-            System.out.println(ref.toString() + "/" + 1 + ".jpg");
-            ref.getDownloadUrl()
-                    .addOnSuccessListener(new OnSuccessListener<Uri>() {
+            //gs://fleet-dynamics.appspot.com/VehicleImages/DI58GHY/0.jpg
 
-                        @Override
-                        public void onSuccess(Uri uri) {
-
-                            System.out.println("here1");
-
-
-                            ;
-                            Glide.with(view)
-                                    .load(uri.toString() + i)
-                                    .into(vehicleimages.get(i));
-
-
-                        }
-                    })
-                    .addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
-                            System.out.println("wrong");
-                        }
-                    });
-
-
+        for(int i = 0; i<4 ; i++)
+        {
+            Glide.with(view)
+                    .load(ref.toString() +"/"+ i)
+                    .into(vehicleimages.get(i));
         }
+
+
+
+
+
+
+
+
 
 
 

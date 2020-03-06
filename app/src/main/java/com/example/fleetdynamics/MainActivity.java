@@ -59,9 +59,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setNavigationItemSelectedListener(this);
 
         View headerView = navigationView.getHeaderView(0);
-        NavEmail = headerView.findViewById(R.id.nav_email);
+        FirebaseAuth fAuth = FirebaseAuth.getInstance();
 
-        NavEmail.setText(email);
+        if(!(fAuth.getCurrentUser() == null))
+        {
+
+        }
+        else {
+            NavEmail = headerView.findViewById(R.id.nav_email);
+            NavEmail.setText(email);
+        }
+
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new JobListFragment()).commit();
         navigationView.setCheckedItem(R.id.nav_joblist);

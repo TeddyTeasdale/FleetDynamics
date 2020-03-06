@@ -56,7 +56,7 @@ public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapte
         holder.customerTextView.setText(job.getCustomerName());
         holder.addressTextView.setText(job.getJobLocation());
         holder.jobTypeTextView.setText(job.getType());
-        holder.vehicleTextView.setText(job.getVehicle());
+        holder.vehicleTextView.setText(job.getVehicle().getModel());
 
 
 

@@ -50,7 +50,8 @@ public class JobListFragment extends Fragment
                     {
                         Job job = jobs.get(position);
                         Bundle bundle = new Bundle();
-                        bundle.putString("Vehicle", job.getVehicle());
+                        bundle.putString("vehicleMake", job.getVehicle().getModel());
+                        bundle.putString("vehicleReg", job.getVehicle().getReg());
                         bundle.putString("Customer", job.getCustomerName());
                         bundle.putString("Address", job.getJobLocation());
                         bundle.putString("JobType", job.getType());
@@ -87,6 +88,7 @@ public class JobListFragment extends Fragment
                 int i = 0;
                 while(!empty)
                 {
+                    Vehicle vehicle = new Vehicle();
                     Job job = new Job ();
 
                     if(dataSnapshot.child(String.valueOf(i)).exists())
@@ -94,7 +96,8 @@ public class JobListFragment extends Fragment
                         job.setJobLocation(dataSnapshot.child(String.valueOf(i)).child("Address").getValue(String.class));
                         job.setCustomerName(dataSnapshot.child(String.valueOf(i)).child("Customer").getValue(String.class));
                         job.setType(dataSnapshot.child(String.valueOf(i)).child("JobType").getValue(String.class));
-                        job.setVehicle(dataSnapshot.child(String.valueOf(i)).child("Vehicle").getValue(String.class));
+                        job.getVehicle().setModel(dataSnapshot.child(String.valueOf(i)).child("Vehicle").child("Make").getValue(String.class));
+                        job.getVehicle().setReg(dataSnapshot.child(String.valueOf(i)).child("Vehicle").child("Registration").getValue(String.class));
                         job.setJobId(i);
 
                     }

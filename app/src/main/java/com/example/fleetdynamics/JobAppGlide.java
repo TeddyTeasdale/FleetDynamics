@@ -12,7 +12,7 @@ import com.google.firebase.storage.StorageReference;
 import java.io.InputStream;
 
 @GlideModule
-public class JobAppGlideModule extends AppGlideModule
+public class JobAppGlide extends AppGlideModule
 {
     @Override
     public void registerComponents(Context context, Glide glide, Registry registry) {

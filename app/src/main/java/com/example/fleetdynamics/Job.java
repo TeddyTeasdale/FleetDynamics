@@ -9,10 +9,10 @@ public class Job implements Serializable
     private int jobId;
     private String customerName;
     private String JobLocation;
-    private String vehicle;
+    private Vehicle vehicle;
     private String type;
 
-    public Job(int jobId ,String customerName, String jobLocation, String vehicle, String type)
+    public Job(int jobId ,String customerName, String jobLocation, Vehicle vehicle, String type)
     {
         this.jobId = jobId;
         this.customerName = customerName;
@@ -27,7 +27,7 @@ public class Job implements Serializable
         this.jobId = 0;
         this.customerName = "";
         JobLocation = "";
-        this.vehicle = "";
+        this.vehicle = new Vehicle();
         this.type = null;
     }
 
@@ -55,11 +55,11 @@ public class Job implements Serializable
         JobLocation = jobLocation;
     }
 
-    public String getVehicle() {
+    public Vehicle getVehicle() {
         return vehicle;
     }
 
-    public void setVehicle(String vehicle) {
+    public void setVehicle(Vehicle vehicle) {
         this.vehicle = vehicle;
     }
 
