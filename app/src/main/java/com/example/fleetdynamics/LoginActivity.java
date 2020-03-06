@@ -66,7 +66,7 @@ public class LoginActivity extends AppCompatActivity
                     return;
                 }
 
-                progressBar.setVisibility(View.VISIBLE);
+                progressBar.setVisibility(View.GONE);
 
                 //authenticate the user
                 //Registering the user in firebase
@@ -78,6 +78,7 @@ public class LoginActivity extends AppCompatActivity
                         {
                             Toast.makeText(LoginActivity.this, "Logged in Sucessfully", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                            progressBar.setVisibility(View.VISIBLE);
                         }
                         else
                         {
@@ -96,6 +97,7 @@ public class LoginActivity extends AppCompatActivity
 
             public void onClick(View v)
             {
+
                 startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
             }
         });

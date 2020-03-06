@@ -31,25 +31,25 @@ public class MainActivity extends AppCompatActivity
         });
 
         Button DamageMap = (Button) findViewById(R.id.DamageMapButton);
-        jobSchedulebutton.setOnClickListener(new View.OnClickListener() {
+        DamageMap.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, DamageSearch.class));
             }
         });
 
         Button Collection = (Button) findViewById(R.id.CollectionButton);
-        jobSchedulebutton.setOnClickListener(new View.OnClickListener() {
+        Collection.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, collectionActivity.class));
             }
         });
 
-        Button Delivery = (Button) findViewById(R.id.DeliveryButton);
-        jobSchedulebutton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, DeliveryActivity.class));
-            }
-        });
+        //Button Delivery = (Button) findViewById(R.id.DeliveryButton);
+       // jobSchedulebutton.setOnClickListener(new View.OnClickListener() {
+        //    public void onClick(View v) {
+        //        startActivity(new Intent(MainActivity.this, DeliveryActivity.class));
+        //    }
+      //  });
     }
 
 }
