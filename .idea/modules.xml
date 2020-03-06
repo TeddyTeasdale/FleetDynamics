@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file:///home/scm-studs/v8015858/AndroidStudioProjects/FleetDynamicsss/FleetDynamics.iml" filepath="/home/scm-studs/v8015858/AndroidStudioProjects/FleetDynamicsss/FleetDynamics.iml" />
-      <module fileurl="file:///home/scm-studs/v8015858/AndroidStudioProjects/FleetDynamicsss/app/app.iml" filepath="/home/scm-studs/v8015858/AndroidStudioProjects/FleetDynamicsss/app/app.iml" />
+      <module fileurl="file:///home/scm-studs/v8015858/FleetDynamicss/FleetDynamics.iml" filepath="/home/scm-studs/v8015858/FleetDynamicss/FleetDynamics.iml" />
+      <module fileurl="file:///home/scm-studs/v8015858/FleetDynamicss/app/app.iml" filepath="/home/scm-studs/v8015858/FleetDynamicss/app/app.iml" />
     </modules>
   </component>
 </project>
