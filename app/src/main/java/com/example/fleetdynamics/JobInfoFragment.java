@@ -72,8 +72,9 @@ public class JobInfoFragment extends Fragment
         for(int i = 0; i<4 ; i++)
         {
             Glide.with(view)
-                    .load(ref.toString() +"/"+ i)
+                    .load(ref.toString() +"/"+ i +".jpg")
                     .into(vehicleimages.get(i));
+
         }
 
 

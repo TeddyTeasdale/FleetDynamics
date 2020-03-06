@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "931598732962-s0c8uc4fadkd005k408b39g916c6d8o1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fleetdynamics",
+            "certificate_hash": "e912e2d8b2928ad1a5b511a336bf66201033ad52"
+          }
+        },
+        {
           "client_id": "931598732962-fcegt7ti974acmd3h9lhlj65mlocud57.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
