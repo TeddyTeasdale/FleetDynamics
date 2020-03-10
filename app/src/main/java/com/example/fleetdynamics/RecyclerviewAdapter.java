@@ -9,9 +9,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+// Author Teddy Teasdale
+
 public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapter.MyViewHolder>
 {
     private ArrayList<Job> jobList;
+
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
         // each data item is just a string in this case
@@ -50,17 +53,10 @@ public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapte
     public void onBindViewHolder(MyViewHolder holder, int position)
     {
         Job job = jobList.get(position);
-
-        String customer =  job.getCustomerName();
-        String vehicle = job.getVehicle();
-        String address = job.getJobLocation();
-        String jobType = job.getType();
-
-
-        holder.customerTextView.setText(customer);
-        holder.addressTextView.setText(address);
-        holder.jobTypeTextView.setText(jobType);
-        holder.vehicleTextView.setText(vehicle);
+        holder.customerTextView.setText(job.getCustomerName());
+        holder.addressTextView.setText(job.getJobLocation());
+        holder.jobTypeTextView.setText(job.getType());
+        holder.vehicleTextView.setText(job.getVehicle().getModel());
 
 
 
