@@ -37,8 +37,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             //}
         //});
 
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-        String email = user.getEmail();
+
 
 
 
@@ -63,12 +62,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if(!(fAuth.getCurrentUser() == null))
         {
-
-        }
-        else {
+            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+            String email = user.getEmail();
             NavEmail = headerView.findViewById(R.id.nav_email);
             NavEmail.setText(email);
         }
+
 
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new JobListFragment()).commit();
