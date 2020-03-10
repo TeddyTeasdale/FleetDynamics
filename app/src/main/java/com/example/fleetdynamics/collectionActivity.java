@@ -54,8 +54,10 @@ public class collectionActivity extends AppCompatActivity
                 startCamera();
                 break;
             case 4:
-                // start summary activity
+
+                startActivity(new Intent(collectionActivity.this, summaryActivity.class));
                 System.out.println(vehiclePhotos.size());
+
                 break;
         }
 
