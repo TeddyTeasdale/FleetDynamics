@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity
         });
 
         Button Collection = (Button) findViewById(R.id.CollectionButton);
-        jobSchedulebutton.setOnClickListener(new View.OnClickListener() {
+        Collection.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, collectionActivity.class));
             }
