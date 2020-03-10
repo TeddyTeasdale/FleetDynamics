@@ -64,7 +64,7 @@ public class JobInfoFragment extends Fragment
         vehicleimages.add(imageView3);
         vehicleimages.add(imageView4);
 
-
+        /**
             StorageReference ref = storage.getReference("/VehicleImages/"+ job.getVehicle().getReg());
             System.out.println(ref.toString());
             //gs://fleet-dynamics.appspot.com/VehicleImages/DI58GHY/0.jpg
@@ -77,7 +77,7 @@ public class JobInfoFragment extends Fragment
 
         }
 
-
+        **/
 
 
 
