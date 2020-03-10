@@ -9,17 +9,8 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43d1b09b-4624-4402-b847-c249702186fb" name="Default Changelist" comment="fikse code">
-      <change beforePath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/.idea/caches/gradle_models.ser" afterDir="false" />
+    <list default="true" id="43d1b09b-4624-4402-b847-c249702186fb" name="Default Changelist" comment="">
       <change beforePath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/.idea/workspace.xml" beforeDir="false" afterPath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/DeliveryyActivity.java" beforeDir="false" afterPath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/DeliveryyActivity.java" afterDir="false" />
-      <change beforePath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/JobSummaryFragment.java" beforeDir="false" afterPath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/JobSummaryFragment.java" afterDir="false" />
-      <change beforePath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/res/layout/activity_deliveryy.xml" beforeDir="false" afterPath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/res/layout/activity_deliveryy.xml" afterDir="false" />
-      <change beforePath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="/home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,23 +31,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/res/layout/activity_deliveryy.xml">
-          <provider editor-type-id="android-designer2" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="72" column="55" selection-end-line="81" />
-              <folding>
-                <element signature="e#1343#1358#0" expanded="true" />
-                <element signature="e#1816#1830#0" expanded="true" />
-                <element signature="e#2230#2246#0" expanded="true" />
-                <element signature="e#2810#2829#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/JobSummaryFragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
@@ -90,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+            <state relative-caret-position="300">
+              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
             </state>
           </provider>
           <provider editor-type-id="android-manifest" />
@@ -126,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/RegisterActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+            <state relative-caret-position="144">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -409,7 +384,35 @@
       <option name="project" value="LOCAL" />
       <updated>1581958082483</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Merge fixes">
+      <created>1583856503169</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583856503169</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Merge fixes">
+      <created>1583856511549</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1583856511549</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Merge fixes">
+      <created>1583856587726</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583856587726</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Merge fixes">
+      <created>1583856597570</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1583856597570</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -475,7 +478,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fikse code" />
-    <option name="LAST_COMMIT_MESSAGE" value="fikse code" />
+    <MESSAGE value="Merge fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge fixes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///home/scm-studs/v8015858/FleetDynamics/app/src/main/res/layout/Screen.kt" />
@@ -613,22 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/DeliveryyActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1374#1536#0" expanded="true" />
-            <element signature="e#1535#1536#0" expanded="true" />
-            <element signature="e#1631#1850#0" expanded="true" />
-            <element signature="e#1849#1850#0" expanded="true" />
-            <element signature="e#1942#2155#0" expanded="true" />
-            <element signature="e#2154#2155#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Android/Sdk/sources/android-29/android/app/Activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -650,17 +638,6 @@
             <element signature="e#1816#1830#0" expanded="true" />
             <element signature="e#2230#2246#0" expanded="true" />
             <element signature="e#2810#2829#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/JobSummaryFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="40" column="71" selection-start-line="40" selection-start-column="71" selection-end-line="40" selection-end-column="71" />
-          <folding>
-            <element signature="e#1458#1566#0" expanded="true" />
-            <element signature="e#1565#1566#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -707,8 +684,8 @@
     </entry>
     <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        <state relative-caret-position="300">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
         </state>
       </provider>
       <provider editor-type-id="android-manifest" />
@@ -738,8 +715,29 @@
     </entry>
     <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/RegisterActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+        <state relative-caret-position="144">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/DeliveryyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///home/scm-studs/t7091808/AndroidStudioProjects/FleetDynamics/app/src/main/java/com/example/fleetdynamics/JobSummaryFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="40" column="71" selection-start-line="40" selection-start-column="71" selection-end-line="40" selection-end-column="71" />
+          <folding>
+            <element signature="e#1458#1566#0" expanded="true" />
+            <element signature="e#1565#1566#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
