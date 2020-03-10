@@ -35,7 +35,6 @@ public class LoginActivity extends AppCompatActivity
 
         myEmail = findViewById(R.id.Email);
         myPassword = findViewById(R.id.password);
-        progressBar = findViewById(R.id.progressBar2);
         fAuth = FirebaseAuth.getInstance();
         myLoginBtn = findViewById(R.id.loginBtn);
         myCreateBtn = findViewById(R.id.createText);
@@ -66,7 +65,7 @@ public class LoginActivity extends AppCompatActivity
                     return;
                 }
 
-                progressBar.setVisibility(View.VISIBLE);
+
 
                 //authenticate the user
                 //Registering the user in firebase
@@ -82,7 +81,7 @@ public class LoginActivity extends AppCompatActivity
                         else
                         {
                             Toast.makeText(LoginActivity.this, "Error !" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                            progressBar.setVisibility(View.GONE);
+
                         }
 
                     }
