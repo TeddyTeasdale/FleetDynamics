@@ -31,9 +31,7 @@ public class DeliveryyActivity extends AppCompatActivity {
     Dialog dis;
     private static final String IMAGE_DIRECTORY = "/signdemo";
 
-    //firebase
-    FirebaseStorage storage;
-    StorageReference storageReference;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,10 +42,6 @@ public class DeliveryyActivity extends AppCompatActivity {
         clear = (Button) findViewById(R.id.delclear);
         save = (Button) findViewById(R.id.delieverysave);
         cancel = (Button) findViewById(R.id.deliverycancel);
-
-        //firebase
-        storage = FirebaseStorage.getInstance();
-        storageReference = storage.getReference();
 
 
         clear.setOnClickListener(new View.OnClickListener() {
@@ -80,11 +74,7 @@ public class DeliveryyActivity extends AppCompatActivity {
         });
     }
 
-       //cancellation
-       public void onCancelled(DatabaseError databaseError)
-       {
-        System.out.println("database error");
-       }
+
 
 
 
