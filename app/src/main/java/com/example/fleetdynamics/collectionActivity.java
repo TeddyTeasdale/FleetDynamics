@@ -70,7 +70,7 @@ public class collectionActivity extends AppCompatActivity
         if(requestCode == CAMERA_REQUEST && resultCode == RESULT_OK)
         {
             Bitmap photo = (Bitmap) data.getExtras().get("data");
-            vehiclePhotos.add(photo);
+            vehiclePhotos.add(screen, photo);
             imageView.setImageBitmap(photo);
         }
         screen++;
