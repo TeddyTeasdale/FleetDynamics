@@ -1,10 +1,12 @@
 package com.example.fleetdynamics;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -63,6 +65,15 @@ public class JobInfoFragment extends Fragment
         vehicleimages.add(imageView2);
         vehicleimages.add(imageView3);
         vehicleimages.add(imageView4);
+
+        Button start = (Button) view.findViewById(R.id.button);
+        start.setOnClickListener(new View.OnClickListener()
+        {
+        public void onClick(View v)
+        {
+            getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new CollectionFragment()).commit();
+        }
+        });
 
         /**
             StorageReference ref = storage.getReference("/VehicleImages/"+ job.getVehicle().getReg());
