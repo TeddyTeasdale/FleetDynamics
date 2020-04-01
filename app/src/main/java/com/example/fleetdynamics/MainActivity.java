@@ -90,9 +90,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
          //   case R.id.nav_joblist:
          //       getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new JobListFragment());
          //       break;
-         //   case R.id.nav_joblist:
-         //       getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new JobListFragment());
-         //       break;
+            case R.id.nav_logout:
+                startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                break;
 
         }
         drawer.closeDrawer(GravityCompat.START);
