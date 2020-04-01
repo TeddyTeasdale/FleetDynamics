@@ -5,7 +5,7 @@
     android:id="@+id/progressBar1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/wallpaper"
+    android:background="@color/Dark_Blue_Gray"
     tools:context=".RegisterActivity">
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:text="Fleet Dynamics"
-        android:textColor="#BCF3DD"
+        android:textColor="#ECECEC"
         android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -50,6 +50,7 @@
         android:hint="Full Name"
         android:inputType="textPersonName"
         android:padding="10dp"
+        android:text=" Full Name"
         android:textColor="#1A1919"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -71,7 +72,9 @@
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:padding="10dp"
+        android:text="Email"
         android:textColor="#1A1919"
+        android:textColorHint="#1A1919"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,6 +93,7 @@
         android:inputType="textPassword"
         android:padding="10dp"
         android:textColor="#1A1919"
+        android:textColorHint="#1A1919"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,7 +106,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:background="@color/colorPrimary"
+        android:background="@color/Light_Blue_Gray"
         android:text="Create"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -114,7 +118,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Already Registered? Login Here"
-        android:textColor="#09E98D"
+        android:textColor="#ECECEC"
         android:textSize="16sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -134,5 +138,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/createText"
         app:layout_constraintVertical_bias="0.346" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
