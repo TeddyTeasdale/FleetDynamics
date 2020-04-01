@@ -1,20 +1,14 @@
 package com.example.fleetdynamics;
 
-// Author Teddy Teasdale
-
-import java.io.Serializable;
-
-public class Job implements Serializable
+public class Job
 {
-    private int jobId;
     private String customerName;
     private String JobLocation;
-    private Vehicle vehicle;
+    private String vehicle;
     private String type;
 
-    public Job(int jobId ,String customerName, String jobLocation, Vehicle vehicle, String type)
+    public Job(String customerName, String jobLocation, String vehicle, String type)
     {
-        this.jobId = jobId;
         this.customerName = customerName;
         JobLocation = jobLocation;
         this.vehicle = vehicle;
@@ -24,19 +18,10 @@ public class Job implements Serializable
 
     public Job()
     {
-        this.jobId = 0;
         this.customerName = "";
         JobLocation = "";
-        this.vehicle = new Vehicle();
+        this.vehicle = "";
         this.type = null;
-    }
-
-    public int getJobId() {
-        return jobId;
-    }
-
-    public void setJobId(int jobId) {
-        this.jobId = jobId;
     }
 
     public String getCustomerName() {
@@ -55,11 +40,11 @@ public class Job implements Serializable
         JobLocation = jobLocation;
     }
 
-    public Vehicle getVehicle() {
+    public String getVehicle() {
         return vehicle;
     }
 
-    public void setVehicle(Vehicle vehicle) {
+    public void setVehicle(String vehicle) {
         this.vehicle = vehicle;
     }
 
