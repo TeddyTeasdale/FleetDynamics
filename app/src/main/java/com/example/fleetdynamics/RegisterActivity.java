@@ -1,3 +1,4 @@
+
 package com.example.fleetdynamics;
 
 import androidx.annotation.NonNull;
@@ -68,7 +69,7 @@ public class RegisterActivity extends AppCompatActivity {
                     return;
                 }
 
-                myProgressBar.setVisibility(View.VISIBLE);
+                myProgressBar.setVisibility(View.GONE);
 
                 //Registering the user in firebase
                 fAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -77,6 +78,7 @@ public class RegisterActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             Toast.makeText(RegisterActivity.this, "User Created", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                            myProgressBar.setVisibility(View.VISIBLE);
                         } else {
                             Toast.makeText(RegisterActivity.this, "Error !" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             myProgressBar.setVisibility(View.GONE);

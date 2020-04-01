@@ -1,19 +1,21 @@
 package com.example.fleetdynamics;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.media.MediaScannerConnection;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 import com.kyanogen.signatureview.SignatureView;
 
 import java.io.ByteArrayOutputStream;
@@ -22,26 +24,27 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Calendar;
 
-public class DeliveryyActivity extends AppCompatActivity {
+public class DeliveryFragment extends Fragment
+{
+
 
     Button cancel, clear, save;
     Bitmap bit;
     SignatureView SignatureView;
-    String view;
+    String View;
     Dialog dis;
     private static final String IMAGE_DIRECTORY = "/signdemo";
 
-
-
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_deliveryy);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_delivery, container, false);
 
-        SignatureView = (SignatureView) findViewById(R.id.delsignature);
-        clear = (Button) findViewById(R.id.delclear);
-        save = (Button) findViewById(R.id.delieverysave);
-        cancel = (Button) findViewById(R.id.deliverycancel);
+
+        SignatureView = (SignatureView) view.findViewById(R.id.delsignature);
+        clear = (Button) view.findViewById(R.id.delclear);
+        save = (Button) view.findViewById(R.id.delieverysave);
+        cancel = (Button) view.findViewById(R.id.deliverycancel);
 
 
         clear.setOnClickListener(new View.OnClickListener() {
@@ -58,7 +61,8 @@ public class DeliveryyActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.v("tag", "cancelled");
                 dis.dismiss();
-                recreate();
+
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new JobSummaryFragment()).commit();
 
             }
         });
@@ -68,15 +72,15 @@ public class DeliveryyActivity extends AppCompatActivity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                bit = SignatureView.getSignatureBitmap();
-                view = saveImage(bit);
+               // bit = SignatureView.getSignatureBitmap();
+                // View = saveImage(bit);
+                startActivity(new Intent(getActivity(), MainActivity.class));
             }
         });
+
+
+        return view;
     }
-
-
-
-
 
     private String saveImage(Bitmap mybit) {
         ByteArrayOutputStream delivery = new ByteArrayOutputStream();
@@ -93,7 +97,7 @@ public class DeliveryyActivity extends AppCompatActivity {
             pc.createNewFile();
             FileOutputStream pi = new FileOutputStream(pc);
             pi.write(delivery.toByteArray());
-            MediaScannerConnection.scanFile(DeliveryyActivity.this,
+            MediaScannerConnection.scanFile(getContext(),
                     new String[]{pc.getPath()},
                     new String[]{"image/jpeg"}, null);
             pi.close();
@@ -106,12 +110,4 @@ public class DeliveryyActivity extends AppCompatActivity {
         return "";
 
     }
-
-
 }
-
-
-
-
-
-
