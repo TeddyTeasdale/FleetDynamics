@@ -38,7 +38,6 @@ public class RegisterActivity extends AppCompatActivity {
         myRegisterBtn = findViewById(R.id.registerBtn);
         myLoginBtn = findViewById(R.id.createText1);
         fAuth = FirebaseAuth.getInstance();
-        myProgressBar = findViewById(R.id.progressBar);
 
 
         if(fAuth.getCurrentUser() != null)
@@ -68,7 +67,7 @@ public class RegisterActivity extends AppCompatActivity {
                     return;
                 }
 
-                myProgressBar.setVisibility(View.GONE);
+
 
                 //Registering the user in firebase
                 fAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -77,10 +76,9 @@ public class RegisterActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             Toast.makeText(RegisterActivity.this, "User Created", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                            myProgressBar.setVisibility(View.VISIBLE);
                         } else {
                             Toast.makeText(RegisterActivity.this, "Error !" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                            myProgressBar.setVisibility(View.GONE);
+
                         }
 
                     }
