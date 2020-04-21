@@ -8,19 +8,16 @@
 
     <com.kyanogen.signatureview.SignatureView
         android:id="@+id/delsignature"
-        android:layout_width="411dp"
-        android:layout_height="400dp"
+        android:layout_width="409dp"
+        android:layout_height="260dp"
 
-        android:layout_marginTop="81dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="280dp"
         sign:backgroundColor="#E7FAFC"
         sign:enableSignature="true"
-        sign:layout_constraintBottom_toTopOf="@+id/deliverycancel"
         sign:layout_constraintEnd_toEndOf="parent"
         sign:layout_constraintHorizontal_bias="1.0"
         sign:layout_constraintStart_toStartOf="parent"
         sign:layout_constraintTop_toTopOf="parent"
-        sign:layout_constraintVertical_bias="0.0"
         sign:penColor="#F1000000"
         sign:penSize="6dp" />
 
@@ -28,21 +25,22 @@
         android:id="@+id/delclear"
         android:layout_width="150dp"
         android:layout_height="60dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginBottom="121dp"
         android:backgroundTintMode="multiply"
         android:text="@string/clear"
         android:visibility="visible"
-        sign:layout_constraintEnd_toEndOf="parent"
-        sign:layout_constraintStart_toEndOf="@+id/deliverycancel"
-        sign:layout_constraintTop_toBottomOf="@+id/delsignature" />
+        sign:layout_constraintBottom_toBottomOf="parent"
+        sign:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/delieverysave"
         android:layout_width="150dp"
         android:layout_height="60dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="121dp"
         android:backgroundTintMode="multiply"
         android:text="@string/save"
+        sign:layout_constraintBottom_toBottomOf="parent"
         sign:layout_constraintStart_toStartOf="parent"
         sign:layout_constraintTop_toBottomOf="@+id/delsignature" />
 
@@ -50,32 +48,63 @@
         android:id="@+id/deliverycancel"
         android:layout_width="115dp"
         android:layout_height="60dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="121dp"
         android:text="@string/cancel"
         sign:layout_constraintBottom_toBottomOf="parent"
         sign:layout_constraintEnd_toStartOf="@+id/delclear"
-        sign:layout_constraintStart_toStartOf="parent"
+        sign:layout_constraintStart_toEndOf="@+id/delieverysave"
         sign:layout_constraintTop_toBottomOf="@+id/delsignature" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="198dp"
-        android:layout_height="40dp"
+        android:layout_height="30dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="206dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="#2196F3"
         android:text="@string/signature"
         android:textSize="20sp"
         sign:layout_constraintBottom_toTopOf="@+id/delsignature"
         sign:layout_constraintEnd_toEndOf="parent"
-        sign:layout_constraintHorizontal_bias="0.500"
+        sign:layout_constraintHorizontal_bias="0.83"
         sign:layout_constraintStart_toStartOf="parent"
         sign:layout_constraintTop_toTopOf="parent"
-        sign:layout_constraintVertical_bias="0.400" />
+        sign:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/customername"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="270dp"
+        android:layout_marginBottom="185dp"
+        android:text="FirstName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        sign:layout_constraintBottom_toTopOf="@+id/textView"
+        sign:layout_constraintEnd_toEndOf="parent"
+        sign:layout_constraintStart_toStartOf="parent"
+        sign:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/customerlast"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="245dp"
+        android:layout_marginBottom="120dp"
+        android:text="LastName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        sign:layout_constraintBottom_toTopOf="@+id/textView"
+        sign:layout_constraintEnd_toEndOf="parent"
+        sign:layout_constraintHorizontal_bias="0.0"
+        sign:layout_constraintStart_toStartOf="parent"
+        sign:layout_constraintTop_toBottomOf="@+id/customername"
+        sign:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
