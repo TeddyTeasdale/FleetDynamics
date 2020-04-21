@@ -9,10 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43d1b09b-4624-4402-b847-c249702186fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_delivery.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_delivery.xml" afterDir="false" />
-    </list>
+    <list default="true" id="43d1b09b-4624-4402-b847-c249702186fb" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583856597570</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="screen">
+      <created>1587482335691</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587482335691</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,7 +217,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fikse code" />
     <MESSAGE value="Merge fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge fixes" />
+    <MESSAGE value="screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="screen" />
   </component>
   <component name="masterDetails">
     <states>
