@@ -10,6 +10,7 @@
         android:targetSdkVersion="29" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
     <!-- <uses-sdk android:minSdkVersion="14"/> -->
@@ -28,21 +29,18 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.fleetdynamics.summaryActivity" />
+        <activity android:name="com.example.fleetdynamics.MapActivity" />
         <activity android:name="com.example.fleetdynamics.RegisterActivity" />
-        <activity android:name="com.example.fleetdynamics.collectionActivity" />
         <activity android:name="com.example.fleetdynamics.SearchAdapter" />
         <activity android:name="com.example.fleetdynamics.DamageSearch" />
-        <activity android:name="com.example.fleetdynamics.DeliveryyActivity" />
-        <activity android:name="com.example.fleetdynamics.MainActivity" >
+        <activity android:name="com.example.fleetdynamics.MainActivity" />
+        <activity android:name="com.example.fleetdynamics.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.fleetdynamics.LoginActivity" />
-        <activity android:name="com.example.fleetdynamics.JobListActivity" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
@@ -53,6 +51,9 @@
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
