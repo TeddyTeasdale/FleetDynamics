@@ -31,10 +31,11 @@
  {
         View view = inflater.inflate(R.layout.fragment_collection, container, false);
         super.onCreate(savedInstanceState);
-
         TextView title = view.findViewById(R.id.titleView);
-        String screen1 = "";
+        
 
+
+        String screen1 = "";
       if(!(getArguments() == null))
       {
           screen1 = getArguments().getString("screenNumber");
@@ -45,19 +46,19 @@
      switch(screen)
        {
           case 0:
-          title.setText("Vehicle Front Photo");
+          title.setText("Front");
           startCamera(view);
           break;
           case 1:
-          title.setText("Vehicle Back Photo");
+          title.setText("Rear");
           startCamera(view);
           break;
           case 2:
-          title.setText("Vehicle Left Side Photo");
+          title.setText("Driver Side");
           startCamera(view);
           break;
           case 3:
-          title.setText("Vehicle Right Side Photo");
+          title.setText("Passenger Side");
           startCamera(view);
           break;
           case 4:
@@ -86,8 +87,7 @@
                 Intent cameraIntent = new Intent
                 (android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
                 startActivityForResult(cameraIntent, CAMERA_REQUEST);
-                }
-                });
+                }});
  }
 
  public void onActivityResult(int requestCode, int resultCode, Intent data)
@@ -107,8 +107,10 @@
       bundle.putParcelableArrayList("myArrayList", vehiclePhotos);
       CollectionFragment collection = new CollectionFragment();
       collection.setArguments(bundle);
-      getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, collection).commit();
+      getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, collection).addToBackStack(null).commit();
       }
+
+
 
  }
 

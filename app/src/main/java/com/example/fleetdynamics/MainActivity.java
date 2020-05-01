@@ -22,6 +22,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
 {
+    //Button backButton;
     private DrawerLayout drawer;
     private TextView NavEmail;
 
@@ -29,6 +30,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+       // backButton = findViewById(R.id.button);
+
+        //backButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this,CollectionFragment.class)));
+        //{
+
+        //}
 
         //Button logOutbutton = (Button) findViewById(R.id.LogOutButton);
         //logOutbutton.setOnClickListener(new View.OnClickListener() {
@@ -70,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new JobListFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new JobListFragment()).addToBackStack(null).commit();
         navigationView.setCheckedItem(R.id.nav_joblist);
 
     }
@@ -81,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (menuItem.getItemId())
         {
             case R.id.nav_joblist:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new JobListFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new JobListFragment()).addToBackStack(null).commit();
                 break;
                 // TO BE IMPLEMENTED WITH OTHER SCREENS UPON MERGE
          //   case R.id.nav_joblist:

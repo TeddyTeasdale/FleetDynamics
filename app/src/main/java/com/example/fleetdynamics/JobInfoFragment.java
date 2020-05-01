@@ -71,7 +71,7 @@ public class JobInfoFragment extends Fragment
         {
         public void onClick(View v)
         {
-            getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new CollectionFragment()).commit();
+            getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new CollectionFragment()).addToBackStack(null).commit();
         }
         });
 
