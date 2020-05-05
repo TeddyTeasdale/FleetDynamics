@@ -36,24 +36,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       // backButton = findViewById(R.id.button);
-
-        //backButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this,CollectionFragment.class)));
-        //{
-
-        //}
-
-        //Button logOutbutton = (Button) findViewById(R.id.LogOutButton);
-        //logOutbutton.setOnClickListener(new View.OnClickListener() {
-            //public void onClick(View v) {
-                //startActivity(new Intent(MainActivity.this, LoginActivity.class));
-            //}
-        //});
-
-
-
-
-
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
