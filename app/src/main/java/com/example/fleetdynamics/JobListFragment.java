@@ -60,7 +60,7 @@ public class JobListFragment extends Fragment
                         frag.setArguments(bundle);
                         System.out.println(position);
 
-                        getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, frag).commit();
+                        getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, frag).addToBackStack(null).commit();
 
                     }
                 });

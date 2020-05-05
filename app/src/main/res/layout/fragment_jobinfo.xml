@@ -5,9 +5,9 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cons"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/cons">
+        android:layout_height="match_parent">
 
 
         <ImageView
@@ -131,6 +131,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/vehicleImage4" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="76dp"
+            android:onClick="mapButton"
+            android:text="Map"
+            app:layout_constraintStart_toEndOf="@+id/jobinfoAddress"
+            app:layout_constraintTop_toBottomOf="@+id/jobinfoVehicle" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </RelativeLayout>

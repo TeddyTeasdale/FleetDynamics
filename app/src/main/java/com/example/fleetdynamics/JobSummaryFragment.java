@@ -41,7 +41,7 @@ public class JobSummaryFragment extends Fragment
         Button logOutbutton = (Button) view.findViewById(R.id.summaryButton);
         logOutbutton.setOnClickListener(new View.OnClickListener() {
         public void onClick(View v) {
-            getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new DeliveryFragment()).commit();
+            getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new DeliveryFragment()).addToBackStack(null).commit();
         
         }
         });
