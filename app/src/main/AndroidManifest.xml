@@ -16,7 +16,7 @@
         <activity android:name=".RegisterActivity"></activity>
         <activity android:name=".SearchAdapter" />
         <activity android:name=".DamageSearch" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"/>
 
         <activity android:name=".MapActivity"></activity>
         <activity android:name=".LoginActivity">
