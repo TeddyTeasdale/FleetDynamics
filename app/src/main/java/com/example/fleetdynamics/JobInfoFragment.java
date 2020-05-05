@@ -28,7 +28,9 @@ import java.util.ArrayList;
 
 public class JobInfoFragment extends Fragment
 {
+
     private DatabaseReference databaseReference;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
@@ -45,7 +47,6 @@ public class JobInfoFragment extends Fragment
         TextView customer = view.findViewById(R.id.jobinfoCustomer);
         TextView address = view.findViewById(R.id.jobinfoAddress);
         TextView type = view.findViewById(R.id.jobinfoType);
-
 
 
         vehicle.setText(job.getVehicle().getModel());
@@ -71,8 +72,22 @@ public class JobInfoFragment extends Fragment
         {
         public void onClick(View v)
         {
+
             getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new CollectionFragment()).addToBackStack(null).commit();
+
+
         }
+        });
+
+        Button mapButton = view.findViewById(R.id.button2);
+        mapButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse("http://google.com/maps"));
+                startActivity(i);
+            }
         });
 
         /**
@@ -89,18 +104,8 @@ public class JobInfoFragment extends Fragment
         }
 
         **/
-
-
-
-
-
-
-
-
-
         return view;
     }
-
 
 
 }
