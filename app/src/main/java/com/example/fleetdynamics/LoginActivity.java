@@ -22,6 +22,8 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+
+
 public class LoginActivity extends AppCompatActivity
 {
     EditText myEmail, myPassword;
@@ -31,11 +33,11 @@ public class LoginActivity extends AppCompatActivity
     FirebaseAuth fAuth;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
         myEmail = findViewById(R.id.Email);
         myPassword = findViewById(R.id.password);
         progressBar = findViewById(R.id.progressBar2);
@@ -52,6 +54,7 @@ public class LoginActivity extends AppCompatActivity
             {
                 String email =  myEmail.getText().toString().trim();
                 String password = myPassword.getText().toString().trim();
+
                 if(TextUtils.isEmpty(email))
                 {
                     myEmail.setError("Email is Required.");
