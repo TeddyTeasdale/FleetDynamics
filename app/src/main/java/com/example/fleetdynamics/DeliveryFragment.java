@@ -62,7 +62,7 @@ public class DeliveryFragment extends Fragment
                 Log.v("tag", "cancelled");
                 dis.dismiss();
 
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new JobSummaryFragment()).commit();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new JobSummaryFragment()).addToBackStack(null).commit();
 
             }
         });

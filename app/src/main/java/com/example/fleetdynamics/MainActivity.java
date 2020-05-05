@@ -8,11 +8,15 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -22,13 +26,22 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
 {
+    //Button backButton;
     private DrawerLayout drawer;
     private TextView NavEmail;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+       // backButton = findViewById(R.id.button);
+
+        //backButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this,CollectionFragment.class)));
+        //{
+
+        //}
 
         //Button logOutbutton = (Button) findViewById(R.id.LogOutButton);
         //logOutbutton.setOnClickListener(new View.OnClickListener() {
@@ -70,9 +83,42 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new JobListFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new JobListFragment()).addToBackStack(null).commit();
         navigationView.setCheckedItem(R.id.nav_joblist);
 
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+        boolean performSync = prefs.getBoolean("perform_Sync",true);
+        String syncInterval = prefs.getString("sync_interval", "30");
+        String fullName = prefs.getString("full_name", "");
+        String email = prefs.getString("email_address","");
+
+
+        Toast.makeText(this, performSync + "", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, syncInterval, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, fullName, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, email, Toast.LENGTH_SHORT).show();
+
+
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        getMenuInflater().inflate(R.menu.drawer_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item)
+    {
+        switch (item.getItemId())
+        {
+            case R.id.settings:
+                startActivity(new Intent(this, Settings.class));
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
@@ -81,7 +127,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (menuItem.getItemId())
         {
             case R.id.nav_joblist:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new JobListFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new JobListFragment()).addToBackStack(null).commit();
                 break;
                 // TO BE IMPLEMENTED WITH OTHER SCREENS UPON MERGE
          //   case R.id.nav_joblist:
